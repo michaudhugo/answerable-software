@@ -6,62 +6,104 @@ Hexagonal architecture often fails while looking correct.
 
 This folder asks why.
 
-It treats hexagonal architecture not as a pattern to apply, but as a structural operation. That operation can succeed or fail independently of whether the visible form has been respected. The question is not whether the code contains a `domain` folder, declared ports, isolated adapters, and inward dependencies. The question is what the frontier makes the application capable of answering for.
+It treats hexagonal architecture not as a pattern to apply, but as a structural operation. That operation can succeed or fail independently of whether the visible form has been respected. A system may have a `domain` folder, declared ports, isolated adapters, inward dependencies, and infrastructure-free tests while still failing to localize what matters.
 
-## The pact
+The question is not whether the hexagon is visible.
 
-This folder is organized in four reading levels of increasing depth. Each level is sufficient for what it promises.
+The question is what the frontier makes the application able to answer for.
+
+## The core displacement
+
+Most explanations of hexagonal architecture start with shape: domain inside, adapters outside, dependencies pointing inward.
+
+This folder starts elsewhere.
+
+A boundary is valuable only if it carries something: a duration, a commitment, a consequence, a correction. If it carries none of these, it is only a form. If it carries them badly, it may hide the very domain it was supposed to reveal.
+
+The guiding question is therefore:
+
+> What does this hexagonal boundary answer for?
+
+In this corpus, **answerability** means the structural capacity of a system to make a rule, commitment, failure, or consequence return to a named place where it can be understood and corrected.
+
+## The reading pact
+
+This folder is organized in four levels of increasing depth.
+
+Each level is sufficient for what it promises.
 
 If you stop at level 1, you have the claim.
 If you stop at level 2, you have the argument.
 If you stop at level 3, you have the defense.
 If you stop at level 4, you have the application.
 
-You are not missing a hidden chapter. The deeper levels do not reveal a different thesis. They place the same thesis under stronger conditions of justification.
+You are not missing a hidden chapter. The deeper levels do not reveal a different thesis. They put the same thesis under stronger conditions of justification.
 
 ## The four levels
 
 **[`claim.md`](./claim.md)** - *5 minutes.*
 
-The thesis stated directly: what it asserts, what it commits to, and what it excludes. Read this if you want to know whether the work is worth your time before entering the reasoning.
+What this work asserts, what it commits to, and what it excludes. Read this first if you want the thesis without the full reasoning.
 
-**[`argument.md`](./argument.md)** - *15 minutes.*
+**[`argument.md`](./argument.md)** - *15 to 20 minutes.*
 
-The reasoning that makes the claim necessary. It moves from the observed failure of formally correct hexagonal architectures to the structural role of the boundary: institution, duration, core failure modes, ports, transactions, and services.
+The reasoning that makes the claim necessary. It moves from the failure of formally correct hexagonal architectures to the structural role of the boundary: institution, duration, core failure modes, ports, transactions, and services.
 
-**[`defense.md`](./defense.md)** - *30 minutes.*
+**[`defense.md`](./defense.md)** - *45 minutes.*
 
-The thesis tested against counter-examples, adjacent positions, and competing architectural readings. Read this if you want to argue with the work rather than only understand it.
+The thesis tested against counter-examples, adjacent positions, competing readings, and its own limits. Read this if you want to challenge the work rather than only understand it.
 
 **[`application.md`](./application.md)** - *operational.*
 
-The tools derived from the thesis: the ontological test, the diagnostic checklist, and the drift typology. Read this if you need to apply the work to a real project on a real Monday morning.
+The tools derived from the thesis: the ontological test, the evidence protocol, the diagnostic grid, the drift typology, the correction order, and the decision record. Read this if you need to apply the work to a real project.
 
-## Companion essays
+## Code examples
 
-Some concepts deserve separate treatment because they can circulate independently from the main four levels.
+Code appears only where it carries proof.
 
-**`conversation.md`** - on the boundary as a legitimacy of conversation, not only a separation of code.
+The examples are not tutorials. They are structural probes. Their role is to expose the difference between a form that looks correct and a form that actually carries an invariant, a conversation, a commitment, or a correction path.
 
-**`transduction.md`** - on the mapper as an organ of semantic decision disguised as plumbing.
+## Companion concepts
 
-They are not required to follow the four levels. They extend specific concepts for readers who want to push them further.
+Some concepts can circulate independently from the four levels and may deserve separate essays later:
+
+- **conversation**: the boundary as a legitimacy of conversation, not only a separation of code;
+- **transduction**: the mapper as an organ of semantic decision disguised as plumbing;
+- **answerability**: the structural return of consequences to a named place of correction;
+- **consequence-bearing software**: software whose structures carry what they make possible.
 
 ## Glossary
 
-**`GLOSSARY.md`** should define the canonical vocabulary of the corpus: answerability, consequence-bearing, load-bearing, instituted core, empty core, mimed core, diffuse core, substantive model, port as conversation, silent transaction, and locus of correction.
+`GLOSSARY.md` should define the canonical vocabulary of the corpus:
 
-The most important term is **answerability**: the structural capacity of a system to make a rule, commitment, failure, or consequence return to a named place where it can be understood and corrected.
+- answerability;
+- consequence-bearing;
+- load-bearing;
+- instituted core;
+- empty core;
+- mimed core;
+- diffuse core;
+- substantive model;
+- port as conversation;
+- silent transaction;
+- locus of correction;
+- transduction;
+- drift.
+
+The glossary is not decorative. It protects the corpus against vocabulary drift.
 
 ## References
 
-**`references.md`** should remain annotated. Its purpose is not only to list sources, but to make explicit what each reference contributes to the argument.
+`references.md` should remain annotated. Its purpose is not only to list sources, but to make explicit what each reference contributes to the argument.
 
-## How to read this folder
+## Suggested path
 
-Read `claim.md` if you want the position.
-Read `argument.md` if you want the reasoning.
-Read `defense.md` if you want the objections.
-Read `application.md` if you want the tools.
+Read `claim.md` first.
 
-Do not start with the tools if you have not understood the thesis. A checklist detached from its reason becomes exactly the kind of formal correctness this work was written to question.
+If the claim feels obvious, read `argument.md` to see whether it follows.
+
+If the argument feels too strong, read `defense.md` to see what it survives and where it stops.
+
+If you need to use the work on a project, read `application.md` last.
+
+Do not begin with the tools. A checklist without its thesis becomes another form of structural theater.
