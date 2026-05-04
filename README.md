@@ -1,5 +1,5 @@
 # answerable-software
-*On software systems that localize what they make impossible, what they commit to, and where their consequences return.*
+*On software systems that make their responsibilities explicit: what they prevent, what they commit to, and where consequences return for correction.*
 
 ---
 
