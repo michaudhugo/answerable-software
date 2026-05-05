@@ -2,10 +2,9 @@
 
 *On what it means for software to answer for itself.*
 
+A software system can fail in two modes.
 
-A software system can fail in two modes. It can fail visibly, when something breaks, a request errors, a job stops, a deployment rolls back. These failures are loud, traceable, and addressable. They are not the dangerous kind.
-
-The dangerous kind is the failure that leaves no one able to answer for what just happened. A consequence was committed somewhere. A rule was bent or quietly applied. A signal was accepted that should have been refused. A state became true that no part of the system was prepared to defend. Nothing broke. Everything ran. And yet, when the question comes, *why did this happen, where do we correct it, what was the system protecting*, no part of the architecture can carry the weight of an answer.
+It can fail visibly, when something breaks, a request errors, a job stops, a deployment rolls back. These failures are loud, traceable, and addressable. They are not the dangerous kind. The dangerous kind is the failure that leaves no one able to answer for what just happened. A consequence was committed somewhere. A rule was bent or quietly applied. A signal was accepted that should have been refused. A state became true that no part of the system was prepared to defend. Nothing broke. Everything ran. And yet, when the question comes, *why did this happen, where do we correct it, what was the system protecting*, no part of the architecture can carry the weight of an answer. The second is to something I call "silent drift".
 
 This corpus is about that second mode. It is about the structural conditions under which a software system can answer for what it does.
 
@@ -31,11 +30,7 @@ The second failure is to believe that answerability is a matter of intent, that 
 
 ## The displacement this corpus proposes
 
-The corpus proposes a single displacement, applied across many domains.
-
-Stop asking *is the architecture clean*. Ask *what does it answer for*.
-
-This question reorganizes everything that follows it.
+The corpus proposes a single displacement, applied across many domains: to stop asking *is the architecture clean*; to start asking *what does it answer for*. And this question reorganizes everything that follows it.
 
 It changes how a boundary is read. A hexagonal frontier, a layered separation, a bounded context, these are not evaluated by their formal correctness, but by what they let the system answer for. A boundary that institutes nothing is decorative. A boundary that institutes a core of invariants and commitments is structural. The same line of code can be either, depending on what it carries.
 
@@ -87,7 +82,7 @@ The corpus does not promise to close that gap. It promises to name it precisely 
 
 ## How to engage
 
-You can read this corpus as a tech lead, looking for tools. You can read it as a theorist, looking for arguments. You can read it as a critic, looking for weaknesses. All three are welcome.
+You can read this corpus as a tech lead, senior engineer, manager, etc., looking for tools. You can read it as a theorist, looking for arguments. You can read it as a critic, looking for weaknesses. All three are welcome :-)
 
 The corpus is open. It is meant to circulate. If you take from it, attribute. If you build on it, keep what you build open. If you disagree, say so in writing, disagreement is how a corpus refines itself.
 
