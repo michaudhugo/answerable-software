@@ -2,11 +2,9 @@
 
 *Level 1. Five minutes. What this work asserts.*
 
-Hexagonal architecture is usually described as a pattern: a domain at the center, ports around it, adapters outside, dependencies pointing inward. Teams that adopt it often focus on respecting this visible form: correct directories, declared interfaces, isolated infrastructure, inward imports, and tests that run without databases or servers.
+Hexagonal architecture is usually described as a pattern: a domain at the center, ports around it, adapters outside, dependencies pointing inward. Teams that adopt it often focus on respecting this visible form: correct directories, declared interfaces, isolated infrastructure, inward imports, and tests that run without databases or servers. Let's stop a moment.
 
-This work asserts that the form is not where the operation lies.
-
-The operation lies in what the boundary makes the application able to answer for.
+The present work asserts that the form is not where the operation lies. The operation lies in what the boundary makes the application able to answer for.
 
 ## Answerability
 
@@ -30,9 +28,7 @@ A hexagonal architecture is true when its boundary localizes three things:
 2. what becomes irreversible together;
 3. where consequences return when something goes wrong.
 
-When the boundary localizes these, it institutes a core.
-
-When it does not, it institutes a void.
+When the boundary localizes these, it institutes a core. And when it does not, it institutes a void.
 
 When the domain exists but is dispersed across places the architecture does not recognize as responsible, the boundary may even mask what it should have made visible.
 
