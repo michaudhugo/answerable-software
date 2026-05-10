@@ -2,8 +2,8 @@
 
 ## Non-use, over-mediation, and the justification horizon
 
-Previous essay: [Developers Cannot Report It Either](./developers-cannot-report.md).  
-Next essay: [Code Is Never Clean Before Trial](./code-is-never-clean-before-trial.md).
+Previous essay: [Developers Cannot Report It Either](./02-developers-cannot-report.md).  
+Next essay: [Code Is Never Clean Before Trial](./04-code-is-never-clean-before-trial.md).
 
 Most engineering teams treat debt and overengineering as opposites. Debt is what was undershipped: too little form, taken too quickly, leaving the codebase in a state that future change will struggle to traverse. Overengineering is what was overshipped: too much form, taken too speculatively, leaving the codebase carrying layers no current requirement justifies. The two failures sit at the ends of a spectrum that good engineering supposedly inhabits the middle of: ship enough, but not too much; abstract usefully, but not for hypothetical futures. The distinction is intuitive. It organizes a great deal of how teams talk to each other, how seniors mentor juniors, how code reviews are conducted.
 
@@ -25,7 +25,7 @@ The literature reflects this duality. The critique of overengineering has its ow
 
 What this essay claims is not that the vocabularies are wrong. It is that they describe failure modes of the same phenomenon, mistaking phase difference for nature difference. The phenomenon is *form inscribed in code awaiting a future that will or will not justify it*. Debt is what we call this form when the future has begun to test it and found it inadequate. Overengineering is what we call this form when the future has either failed to arrive at all, or has arrived in a way that reveals the form's cost to outweigh its use. The distinction is real, in the sense that the two phenomena look and feel different. But the underlying condition is one.
 
-This is the point at which the essay extends the two previous essays. [Debt Cannot Be Measured](./debt-cannot-be-measured.md) argued that debt is not a stock contained in code. [Developers Cannot Report It Either](./developers-cannot-report.md) argued that developer reports are not ground truth either. This essay adds a third closure: if debt is not directly measurable or directly reportable, then the boundary between debt and overengineering cannot be treated as a stable category boundary inside the codebase.
+This is the point at which the essay extends the two previous essays. [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md) argued that debt is not a stock contained in code. [Developers Cannot Report It Either](./02-developers-cannot-report-it-either.md) argued that developer reports are not ground truth either. This essay adds a third closure: if debt is not directly measurable or directly reportable, then the boundary between debt and overengineering cannot be treated as a stable category boundary inside the codebase.
 
 ## Forms under residual bet
 
@@ -115,13 +115,13 @@ A third part of the answer is psychological. To accept that debt and overenginee
 
 The reframe matters for what the rest of this folder argues.
 
-If debt and overengineering are not separate kinds of pathology but failure modes of a single condition, then the established way of thinking about code quality, in which clean code is one category and indebted or over-engineered code are deviations from it, becomes suspect. There may not be three kinds of code. There may be one regime, in which every form is awaiting trial, and four states of revelation: not yet tested, tested and passing silently, tested by friction, and tested negatively, whether by absence or by costly traversal. The category of *clean code*, under this view, is not a stable property of the code itself but a retrospective attribution made about forms that have so far passed their trials, or have not yet been tested rigorously enough to fail. [Code Is Never Clean Before Trial](./code-is-never-clean-before-trial.md) takes up this proposition and tests it.
+If debt and overengineering are not separate kinds of pathology but failure modes of a single condition, then the established way of thinking about code quality, in which clean code is one category and indebted or over-engineered code are deviations from it, becomes suspect. There may not be three kinds of code. There may be one regime, in which every form is awaiting trial, and four states of revelation: not yet tested, tested and passing silently, tested by friction, and tested negatively, whether by absence or by costly traversal. The category of *clean code*, under this view, is not a stable property of the code itself but a retrospective attribution made about forms that have so far passed their trials, or have not yet been tested rigorously enough to fail. [Code Is Never Clean Before Trial](./04-code-is-never-clean-before-trial.md) takes up this proposition and tests it.
 
 For now, the working position is that the conversation between debt and overengineering has been organized by an opposition that does more harm than good. Debt is the form whose verdict has come back as friction. Overengineering is the form whose verdict has come back as silence or as drag. Treating them separately encourages teams to think they are running two different risks. They are running one risk, in different temporal modes.
 
 The practical implication, which the later essays of this folder will make explicit, is that observation systems designed to detect debt are likely to miss overengineering entirely, especially in its non-use mode, because they are calibrated to detect friction. To detect overengineering in either mode, one would need to detect either the prolonged absence of friction, for non-use, or the diffuse small surcharge of over-mediation, neither of which is the kind of thing dashboards detect. The dashboards are looking for trials in progress and failing. The non-use overengineering's trial has not come, and the over-mediation's trial is everywhere at once.
 
-The final essays extend the same movement. [Code as Score](./code-as-score.md) asks what kind of thing code must be if its quality can change while its bytes remain unchanged. [Designing for Local Return](./designing-for-local-return.md) asks what design criterion remains once quality is understood as trial, performability, and answerability rather than as a present-tense property of form.
+The final essays extend the same movement. [Code as Score](./05-code-as-score.md) asks what kind of thing code must be if its quality can change while its bytes remain unchanged. [Designing for Local Return](./06-designing-for-local-return.md) asks what design criterion remains once quality is understood as trial, performability, and answerability rather than as a present-tense property of form.
 
 ## Operational remainder
 
@@ -135,8 +135,8 @@ The final essays extend the same movement. [Code as Score](./code-as-score.md) a
 
 ## Dossier links
 
-- Previous: [Developers Cannot Report It Either](./developers-cannot-report.md)
-- Next: [Code Is Never Clean Before Trial](./code-is-never-clean-before-trial.md)
-- Earlier premise: [Debt Cannot Be Measured](./debt-cannot-be-measured.md)
-- Later development: [Code as Score](./code-as-score.md)
-- Practical criterion: [Designing for Local Return](./designing-for-local-return.md)
+- Previous: [Developers Cannot Report It Either](./02-developers-cannot-report-it-either.md)
+- Next: [Code Is Never Clean Before Trial](./04-code-is-never-clean-before-trial.md)
+- Earlier premise: [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md)
+- Later development: [Code as Score](./05-code-as-score.md)
+- Practical criterion: [Designing for Local Return](./06-designing-for-local-return.md)
