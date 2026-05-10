@@ -1,9 +1,9 @@
 # Developers Cannot Report It Either (not as ground truth)
 
-> Previous: [Debt Cannot Be Measured](./debt-cannot-be-measured.md)  
-> Next: [Overengineering Is Debt Whose Trial Has Not Come](./overengineering-is-debt-whose-trial-1.md)
+> Previous: [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md)  
+> Next: [Overengineering Is Debt Whose Trial Has Not Come](./03-overengineering-is-debt-whose-trial.md)
 
-[Debt Cannot Be Measured](./debt-cannot-be-measured.md) closed one door. If the dashboards do not measure technical debt, the natural next move is to ask the people who wrote the code. They were there, so they naturally know what shortcuts were taken, where the model is partial, which modules were rushed. The reflex is reasonable. It is also, as a stable epistemic strategy, broken in ways that have nothing to do with the developers themselves.
+[Debt Cannot Be Measured](./01-debt-cannot-be-measured.md) closed one door. If the dashboards do not measure technical debt, the natural next move is to ask the people who wrote the code. They were there, so they naturally know what shortcuts were taken, where the model is partial, which modules were rushed. The reflex is reasonable. It is also, as a stable epistemic strategy, broken in ways that have nothing to do with the developers themselves.
 
 This essay shows why. It does not argue that developers are unreliable witnesses to their own work in some general sense; that would be a different and unpleasant claim. It argues that the specific question *where is the debt in this codebase*, addressed to those who wrote it, is structurally answered with distortion. The distortion is not malice or incompetence. It is built into the conditions under which code gets written, remembered, and discussed.
 
@@ -21,7 +21,7 @@ So when a manager faces a codebase whose dashboards have failed her and turns to
 
 The three reasons compose. Each can be objected to in isolation. Their conjunction forms a condition that no individual correction can lift. The argument below sets them out one at a time, then shows why their composition is the relevant level.
 
-Return to the payment-provider abstraction introduced in [Debt Cannot Be Measured](./debt-cannot-be-measured.md). The author may remember that the second provider was expected. They may remember some compromises made to ship the first version. But they may not remember which parts of the abstraction were speculative rather than necessary, which constraints came from the first provider alone, which later bypasses normalized around the abstraction, or which parts of the design are now politically difficult to question because senior judgment was invested in them. The knowledge exists, but it does not exist as a clean list waiting to be extracted.
+Return to the payment-provider abstraction introduced in [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md). The author may remember that the second provider was expected. They may remember some compromises made to ship the first version. But they may not remember which parts of the abstraction were speculative rather than necessary, which constraints came from the first provider alone, which later bypasses normalized around the abstraction, or which parts of the design are now politically difficult to question because senior judgment was invested in them. The knowledge exists, but it does not exist as a clean list waiting to be extracted.
 
 ## The epistemic mechanism
 
@@ -81,7 +81,7 @@ The literature itself supports a cautious reading. Self-admitted debt markers ar
 
 ## What situated knowledge of debt actually looks like
 
-The picture that emerges is severe. Debt is not contained by the code, [Debt Cannot Be Measured](./debt-cannot-be-measured.md) argued. Debt is not contained by developer reports either, this essay has argued. The natural conclusion, that nothing can be known about debt, is wrong, but the right conclusion takes a moment to set out.
+The picture that emerges is severe. Debt is not contained by the code, [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md) argued. Debt is not contained by developer reports either, this essay has argued. The natural conclusion, that nothing can be known about debt, is wrong, but the right conclusion takes a moment to set out.
 
 The right conclusion is that knowledge of debt is *triangulated and longitudinal*, never primary and synchronic. No single source has direct access. What is available, instead, is a set of partial signals, each of which is unreliable on its own but which can be cross-checked against each other over time. The structural signatures that the code exposes (what the dashboards detect, read as locations rather than as quantities). The friction observed when change passes through (rework rates, review cycles, rollback frequency). The self-admissions developers do inscribe (read as one signal among others, not as ground truth). The change program of the organization (which determines where latent debt will become costly). The historical ruptures (post-mortems, missed deadlines, abandoned features) that crystallize, in retrospect, where the debt was concentrated.
 
@@ -91,13 +91,13 @@ The implication for organizational practice is uncomfortable. There is no clean 
 
 ## Why this matters for what follows
 
-This essay closes the second of the doors that [Debt Cannot Be Measured](./debt-cannot-be-measured.md) opened. Measurement does not give primary access, and self-report does not give it either. Both failures are structural. Neither is a defect that better tools or better methods can fix.
+This essay closes the second of the doors that [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md) opened. Measurement does not give primary access, and self-report does not give it either. Both failures are structural. Neither is a defect that better tools or better methods can fix.
 
 What this leaves is a more difficult position to hold, and the rest of this folder is written from that position. If debt cannot be measured and cannot be directly reported, then the very category of debt, as it functions in industry conversations, is suspect. It is treated as if it were an object that the right instrument could detect. It is, instead, a relation that becomes visible only at the moment of friction and that no source can access in advance.
 
-This shift makes possible a question the next essay takes up. The category of *technical debt* is usually distinguished from *over-engineering*. Debt is what was undershipped (too little form, too quickly). Over-engineering is what was overshipped (too much form, too speculatively). The distinction has felt natural, and it has organized a good deal of the industry's thinking. But under the regime that begins to emerge here, the distinction may not survive. If debt becomes visible only at the moment of friction, then over-engineering may turn out to be debt that has not yet had its moment, debt whose trial has not yet come. [Overengineering Is Debt Whose Trial Has Not Come](./overengineering-is-debt-whose-trial-1.md) tests this hypothesis, and what it finds reorganizes the map.
+This shift makes possible a question the next essay takes up. The category of *technical debt* is usually distinguished from *over-engineering*. Debt is what was undershipped (too little form, too quickly). Over-engineering is what was overshipped (too much form, too speculatively). The distinction has felt natural, and it has organized a good deal of the industry's thinking. But under the regime that begins to emerge here, the distinction may not survive. If debt becomes visible only at the moment of friction, then over-engineering may turn out to be debt that has not yet had its moment, debt whose trial has not yet come. [Overengineering Is Debt Whose Trial Has Not Come](./03-overengineering-is-debt-whose-trial-has-not-come.md) tests this hypothesis, and what it finds reorganizes the map.
 
-For now, the working position is this. [Debt Cannot Be Measured](./debt-cannot-be-measured.md) argued that debt is not contained by the code. This essay has argued that debt is not contained by developer reports either. What is in the code is substrate. What is in developer reports is partial, perishable, and socially shaped testimony. What is in the team, over time, is a narrative that approximates the debt without ever capturing it. The discipline of working with debt is the discipline of holding that narrative honestly, accepting that no shortcut to it exists.
+For now, the working position is this. [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md) argued that debt is not contained by the code. This essay has argued that debt is not contained by developer reports either. What is in the code is substrate. What is in developer reports is partial, perishable, and socially shaped testimony. What is in the team, over time, is a narrative that approximates the debt without ever capturing it. The discipline of working with debt is the discipline of holding that narrative honestly, accepting that no shortcut to it exists.
 
 ## Operational remainder
 
@@ -109,6 +109,6 @@ For now, the working position is this. [Debt Cannot Be Measured](./debt-cannot-b
 
 ## Dossier links
 
-This essay depends on the first displacement made in [Debt Cannot Be Measured](./debt-cannot-be-measured.md): dashboards produce signals, not measurements of debt. It prepares the next displacement in [Overengineering Is Debt Whose Trial Has Not Come](./overengineering-is-debt-whose-trial-1.md): once neither tools nor developer reports give direct access to debt, the boundary between debt and overengineering has to be reconsidered.
+This essay depends on the first displacement made in [Debt Cannot Be Measured](./01-debt-cannot-be-measured.md): dashboards produce signals, not measurements of debt. It prepares the next displacement in [Overengineering Is Debt Whose Trial Has Not Come](./03-overengineering-is-debt-whose-trial.md): once neither tools nor developer reports give direct access to debt, the boundary between debt and overengineering has to be reconsidered.
 
-The later essays extend the same grammar. [Code Is Never Clean Before Trial](./code-is-never-clean-before-trial-1.md) generalizes the argument from debt to code quality as such. [Code as Score](./code-as-score-1.md) explains why unchanged code can lose performability as its surrounding apparatus changes. [Designing for Local Return](./designing-for-local-return.md) extracts the practical criterion that remains once measurement, testimony, intrinsic cleanliness, and objecthood have been displaced.
+The later essays extend the same grammar. [Code Is Never Clean Before Trial](./04-code-is-never-clean-before-trial.md) generalizes the argument from debt to code quality as such. [Code as Score](./05-code-as-score.md) explains why unchanged code can lose performability as its surrounding apparatus changes. [Designing for Local Return](./06-designing-for-local-return.md) extracts the practical criterion that remains once measurement, testimony, intrinsic cleanliness, and objecthood have been displaced.
